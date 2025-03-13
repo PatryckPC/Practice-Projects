@@ -1,0 +1,85 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.inicio {
+    justify-content: center;
+    background: url("img/lol.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+}
+nav{
+    display: absolute;
+    margin-left: 60px;
+    background-color: #148F77;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: right;
+}
+
+.foto{
+    display: inline-block;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 5px solid #940253;
+    object-fit: cover;
+    
+}
+
+.sobremi{
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.sobremi .fila{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    padding: 20 0px;
+    text-align: center;
+
+}
+
+.habilidades{
+    background: url("img/lol.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    height: 200px;
+    text-align: fixed;
+    margin: auto;
+
+}
+
+.resumen{
+    text-align: center;
+}
+
+.contacto{
+    background-color: rgb(53, 53, 53);
+}
+
+.contacto .contenido{
+    text-align: center;
+    color: #fff;
+}
+
+.contacto .fin{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.contacto .fin h2{
+    text-align: center;
+    color: #21b39a;
+}
+
+.contacto .fin p{
+    text-align: center;
+    color: #fff;
+}

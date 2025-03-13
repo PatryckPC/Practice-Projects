@@ -1,0 +1,32 @@
+*{
+    background-color: mediumpurple;
+}
+.contenedor .cajita-pokemon img{
+    width: 80px;
+    height: 80px;
+    transition: transform .10s ease-in-out;
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.contenedor .cajita-pokemon .cajita-texto{
+ 
+}
+.contenedor .cajita-pokemon .cajita-texto span{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    display: none;
+}
+
+.contenedor .cajita-pokemon:hover .cajita-textospan{
+    display: block;
+    transform: translateY(-150px);
+}
+
+.contenedor .cajita-pokemon:hover img{
+    transform: translateY(-50px);
+}

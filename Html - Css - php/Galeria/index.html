@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    
+<div class="slider-container">
+
+    <div class="slide">
+        <img class="slide-img" src="img/atrox.jpg">
+    </div>
+
+</div>
+<div class="BOTONES">
+    <button type="button" class="boton1">
+        ANTERIOR
+    </button>
+    <button type="button" class="boton2">
+        SIGUIENTE
+    </button>
+</div>
+
+
+<script>
+    arreglo=["img/atrox.jpg","img/ahri.jpg","img/akali.jpg","img/akshan.jpg"];
+    var imagen= document.querySelector(".slide-img");
+    var boton2= document.querySelector(".boton2");
+    var boton1= document.querySelector(".boton1");
+    contador = 0;
+    boton1.style.display="none";
+    boton2.addEventListener("click", function(){
+        contador++;
+        imagen.setAttribute("src",arreglo[contador]);
+        console.log(contador)
+        if (contador>=3){
+            boton2.style.display="none";
+        }
+        if (contador>=1){
+            boton1.style.display="block";
+        }
+    });
+
+    boton1.addEventListener("click", function(){
+        contador--;
+        imagen.setAttribute("src",arreglo[contador]);
+        if (contador>=1){
+            boton1.style.display="block";
+        }
+        if (contador<=0){
+            boton1.style.display="none";
+        }
+        if (contador<=2){
+            boton2.style.display="block";
+        }
+
+    });
+</script>
+</body>
+</html>

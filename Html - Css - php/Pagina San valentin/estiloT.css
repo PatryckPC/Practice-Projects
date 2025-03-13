@@ -1,0 +1,40 @@
+*{
+
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+
+}
+
+.sec1{
+    background-image: url(texto.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: black;
+    text-align: center;
+}
+
+.sec1:hover{
+    background-image: url(texto2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: black ;
+    text-align: center;
+}
+
+
+body{
+
+    background-image: url(imagen.png);
+    background-size: cover;
+    background-attachment: fixed;
+
+    margin: 20px;
+
+}
